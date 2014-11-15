@@ -1,0 +1,104 @@
+
+/* #Title
+================================================== */
+.title {
+    display: inline-block;
+    margin-top: 200px;
+    width: 100%;
+    padding-top: 16%;
+    padding-bottom: 16%;
+}
+  
+.title-menu {
+    display: inline-block;
+    margin-top: 150px;
+    width: 100%;
+    padding-top: 18%;
+    padding-bottom: 5%;
+}
+
+.words {
+    width: 87%;
+    margin-left: 6.5%;
+}
+
+
+/* #WORK PAGE
+================================================== */
+.work {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: #1C1C1C;
+    color: rgba(255, 193, 37, 0.3);
+}
+
+.grid {
+	width: 100%;
+	text-align: center;
+}
+
+.box {
+	float: left;
+	position: relative;
+  	width: 33.3333%;
+  	padding-bottom: 27.5%;
+    background: #1C1C1C;
+    @media only screen and (max-width: 959px) {
+        float: left;
+        position: relative;
+        width: 50%;
+        padding-bottom: 45%;
+    }
+}
+
+.boxer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;   
+}
+    
+.boxer:hover .overlay{
+    opacity: 1.0;
+    transition: all .25s ease;
+}
+	
+.epe { 
+    background: url('../../images/work/epe.jpg') no-repeat 50% 50% transparent;
+    background-size: cover;
+}
+
+.indies { 
+    background: url('../../images/work/studio.jpg') no-repeat 50% 50% transparent;
+    background-size: cover;
+}
+
+.winston { 
+    background: url('../../images/work/winmac.jpg') no-repeat 50% 30% transparent;
+    background-size: cover;
+}
+
+.janky { 
+    background: url('../../images/work/janky.jpg') no-repeat 50% 30% transparent;
+    background-size: cover;
+}
+
+.overlay {
+    opacity: 0.0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,0.8);
+    color: #FAFAFA;
+    padding-top: 10%;
+    text-align: left;
+    padding-left: 10%;
+    transition: all .25s ease;
+}
+

@@ -1,0 +1,20 @@
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/theGrid';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/main';
+@import 'layout/footer';
+@import 'pages/journal';
+@import 'components/media';
+@import 'components/buttons';
+
+
+// yo bro add in some mixins and colors and shit.
+$main-color: white;
+$h1-color: yellow;
+
+body {
+    background: $main-color;
+}

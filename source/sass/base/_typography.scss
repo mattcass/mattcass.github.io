@@ -1,0 +1,78 @@
+/* #TYPOGRAPHY 
+================================================== */
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+	color: #515151;
+	font: normal 110%/1.7em "oxygen", georgia, serif;
+	-webkit-font-smoothing: subpixel-antialiased;
+    word-wrap: break-word;
+}
+
+a[role=button] {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+	color: #515151;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+strong {
+  font-weight: bold;
+  line-height: 1;
+}
+
+em {
+  font-style: italic;
+  font-size: 1em;
+  color: #989898;
+  color: rgba(0,0,0,0.5)
+}
+
+/* #TYPOGRAPHY HEADINGS
+================================================== */
+h1, h2, h3, h4, h5 {
+	color: #000;
+	font: 2em/1.2em "Vollkorn", georgia, sans-serif;
+    font-weight: 400;
+}
+
+h1 { 
+    font-family: "vollkorn", serif;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h4 {
+	font-size: 1.12em; 
+    line-height: 0.2em;
+}
+
+h5 {
+	font-size: 1.1em;
+}
+
+small, .footer address {
+    font-size: 0.7em;
+}
+
+
+
