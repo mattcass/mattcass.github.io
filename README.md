@@ -8,8 +8,9 @@ Utilizes
 -------------
 [NodeJS](http://nodejs.org/), [Gulp](http://gulpjs.com/), and [Sass](http://sass-lang.com/)
 
-Installing
 -------------
+If you want to hack away..
+
 Step 1. Install [NodeJS](http://nodejs.org/download/)
 
 Step 2. Install [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started)
