@@ -1,7 +1,7 @@
 INDEX
 ===========
 Source files for my own personal website
-[matthewcasserly.com](http://matthewcasserly.com/). A work in progress. 
+[www.matthewcasserly.com](http://matthewcasserly.com/). A work in progress. 
 
 
 Utilizes
