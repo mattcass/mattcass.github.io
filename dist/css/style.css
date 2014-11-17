@@ -489,8 +489,8 @@ small, .footer address {
       position: absolute;
       top: 0;
       right: 0;
-      padding-top: 26px;
-      padding-right: 40px;
+      padding-top: 22px;
+      padding-right: 15px;
       -webkit-transition: 0.25s ease;
               transition: 0.25s ease; } }
 
