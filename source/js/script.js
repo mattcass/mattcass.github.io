@@ -4,6 +4,13 @@ $(document).ready(function($) {
     // WELCOME MESSAGE TO ANY DEVELOPERS
     console.log("Well hello there.");
 
+    // MOBILE NAVIGATION
+    $('.js-click').click(function() {
+    $(".nav").toggleClass('active');
+    $(".menu-link").toggleClass('active');
+    $("main").toggleClass('active');
+    });
+
     // FILTER JOURNAL ENTRIES BY CATEGORY
     $('.filter').delegate('a', 'click', function (event) {
     $('.content').hide().filter('.' + this.href.slice(this.href.indexOf("#") + 1)).show();

@@ -1,4 +1,20 @@
 
+/* # main movement
+================================================== */
+
+main.active {
+    @media only screen and (max-width: 959px) {
+        transform: translate(-10em, 0px);
+        transition: 0.25s ease;
+        -webkit-backface-transition: hidden;
+    }
+}
+
+main {
+    transition: 0.25s ease;
+    -webkit-backface-transition: hidden;
+}
+
 /* #Title
 ================================================== */
 .title {
