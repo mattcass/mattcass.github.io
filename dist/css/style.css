@@ -496,7 +496,15 @@ small, .footer address {
 
 .menu-link a {
   text-decoration: none;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  -webkit-transition: 0.5s ease;
+          transition: 0.5s ease; }
+
+.menu-link a:hover {
+  text-decoration: none;
+  font-size: 1.5em;
+  -webkit-transition: 0.5s ease;
+          transition: 0.5s ease; }
 
 @media only screen and (max-width: 959px) {
   .menu-link.active {
