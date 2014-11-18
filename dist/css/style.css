@@ -480,45 +480,9 @@ small, .footer address {
             transition: 0.25s ease;
     -webkit-backface-transition: hidden; } }
 
-.menu-link {
-  display: none;
-  z-index: 10; }
-  @media only screen and (max-width: 959px) {
-    .menu-link {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding-top: 22px;
-      padding-right: 15px;
-      -webkit-transition: 0.25s ease;
-              transition: 0.25s ease; } }
-
-.menu-link a {
-  text-decoration: none;
-  font-size: 1.4em;
-  -webkit-transition: 0.5s ease;
-          transition: 0.5s ease; }
-
-.menu-link a:hover {
-  text-decoration: none;
-  font-size: 1.5em;
-  -webkit-transition: 0.5s ease;
-          transition: 0.5s ease; }
-
-@media only screen and (max-width: 959px) {
-  .menu-link.active {
-    -webkit-transform: translate(-7em, 0px);
-        -ms-transform: translate(-7em, 0px);
-            transform: translate(-7em, 0px);
-    -webkit-transition: 0.25s ease;
-            transition: 0.25s ease;
-    -webkit-backface-transition: hidden; } }
-
 .nav ul {
   text-align: right;
-  padding-top: 10px;
-  padding-right: 20px; }
+  padding-top: 10px; }
   @media only screen and (max-width: 959px) {
     .nav ul {
       text-align: center;
@@ -545,6 +509,41 @@ small, .footer address {
 
 .nav a:hover {
   text-decoration: underline; }
+
+.menu-link {
+  display: none;
+  z-index: 10; }
+  @media only screen and (max-width: 959px) {
+    .menu-link {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-top: 22px;
+      padding-right: 10px;
+      -webkit-transition: 0.25s ease;
+              transition: 0.25s ease; } }
+
+.menu-link a {
+  text-decoration: none;
+  font-size: 1.4em;
+  -webkit-transition: 0.5s ease;
+          transition: 0.5s ease; }
+
+.menu-link a:hover {
+  text-decoration: none;
+  font-size: 1.5em;
+  -webkit-transition: 0.5s ease;
+          transition: 0.5s ease; }
+
+@media only screen and (max-width: 959px) {
+  .menu-link.active {
+    -webkit-transform: translate(-7em, 0px);
+        -ms-transform: translate(-7em, 0px);
+            transform: translate(-7em, 0px);
+    -webkit-transition: 0.25s ease;
+            transition: 0.25s ease;
+    -webkit-backface-transition: hidden; } }
 
 /* # main movement
 ================================================== */
