@@ -6,9 +6,9 @@ $(document).ready(function($) {
 
     // MOBILE NAVIGATION
     $('.js-click').click(function() {
-    $(".nav").toggleClass('active');
-    $(".menu-link").toggleClass('active');
-    $("main").toggleClass('active');
+        $(".nav").toggleClass('active');
+        $(".menu-link").toggleClass('active');
+        $("main").toggleClass('active');
     });
 
     // FILTER JOURNAL ENTRIES BY CATEGORY
