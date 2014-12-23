@@ -761,6 +761,11 @@ code {
   height: auto;
   margin-top: 2em;
   margin-bottom: 2em; }
+  @media only screen and (max-width: 700px) {
+    .portfolio img {
+      width: 114%;
+      margin-left: -7%;
+      overflow: auto; } }
 
 .projects img {
   width: 50%;
