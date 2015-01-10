@@ -22,6 +22,17 @@
     }
 }
 
+.content--left {
+    width: 60%;
+    padding-bottom: 7%;
+    height: auto;
+    @media only screen and (max-width: 1000px) {
+        width: 75%;
+    }
+    @media only screen and (max-width: 600px) {
+            width: 100%;
+    }
+}
 
 .half { 
     float: left;    

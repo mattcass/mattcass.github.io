@@ -403,6 +403,17 @@ small, .footer address {
       width: 100%;
       margin-left: 0%; } }
 
+.content--left {
+  width: 60%;
+  padding-bottom: 7%;
+  height: auto; }
+  @media only screen and (max-width: 1000px) {
+    .content--left {
+      width: 75%; } }
+  @media only screen and (max-width: 600px) {
+    .content--left {
+      width: 100%; } }
+
 .half {
   float: left;
   width: 50%; }
@@ -756,6 +767,13 @@ code {
   padding-bottom: 10%;
   margin-bottom: 2em; }
 
+p.line {
+  text-decoration: line-through; }
+
+p.bold {
+  font-weight: bold;
+  color: #000; }
+
 .portfolio img {
   width: 100%;
   height: auto;
@@ -790,6 +808,21 @@ code {
       height: auto;
       margin-top: 2em;
       margin-bottom: 2em; } }
+
+.travel img {
+  width: 120%;
+  margin-left: 5%;
+  height: auto;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  @media only screen and (max-width: 700px) {
+    .travel img {
+      width: 100%;
+      margin-left: 0; } }
+
+img.smaller {
+  width: 75%;
+  height: auto; }
 
 body {
   background: white; }
