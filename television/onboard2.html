@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+
+<meta charset="utf-8">
+<title>Samsung</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="dist/css/style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Title Goes Here"/>
+<meta property="og:url" content="http://www.URL.com"/>
+<meta property="og:site_name" content="Site Name"/>
+<meta property="og:type" content="website"/>
+<meta name="robots" content="index,follow">
+
+<link rel="shortcut icon" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+
+</head>
+<body>
+
+    <main class="tv">
+        <div class="container">
+        <header class="header">
+
+            <div class="hello">
+                <h2>Do you want to set up a user profile for your stuff?</h2>
+                <ul class="answers">  
+                    <li>
+                        <a class="choice" href="#">
+                            <h2>Nope.</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="choice" href="#">
+                            <h2>Yep.</h2>
+                        </a>
+                    </li>
+                </ul>   
+            </div>
+
+        </header>
+
+        <section class="who"> 
+            <h2>What is your name?</h2>
+            <input type="text" placeholder="name" class="name">
+            <h2>Yep. That's me!</h2>
+            <p class="outputName"></p>
+        </section>
+
+        <section class="password">
+            <h2>Do you want to set a password, <span></span>?</h2>
+            <ul class="answers">  
+                <li>
+                    <a class="choice move" href="tv.html">
+                        <h2>Nah.</h2>
+                    </a>
+                </li>
+                <li>
+                    <a class="choice" href="#">
+                        <h2>Yep.</h2>
+                    </a>
+                </li>
+            </ul>   
+            <div class="done">
+            <h2>Done. Let's watch stuff!</h2>
+            </div>
+        </section>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://js.pusher.com/2.2/pusher.min.js"></script>
+    <script src="dist/js/script.min.js"></script>
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+</body>
+</html>
