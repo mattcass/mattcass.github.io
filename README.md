@@ -1,4 +1,4 @@
-![alt tag](images/matt.png)
+![alt tag](images/work/portfolio/vim.png)
 
 INDEX
 ===========
