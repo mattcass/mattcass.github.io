@@ -470,35 +470,10 @@ small, .footer address {
   display: table-cell;
   vertical-align: middle;
   padding-top: 15px; }
-  @media only screen and (max-width: 959px) {
-    .nav {
-      position: fixed;
-      right: -10em;
-      top: 0;
-      width: 10em;
-      height: 100%;
-      z-index: 10;
-      background: #000;
-      -webkit-transition: 0.25s ease;
-              transition: 0.25s ease; } }
-
-@media only screen and (max-width: 959px) {
-  .nav.active {
-    -webkit-transform: translate(-10em, 0px);
-        -ms-transform: translate(-10em, 0px);
-            transform: translate(-10em, 0px);
-    -webkit-transition: 0.25s ease;
-            transition: 0.25s ease;
-    -webkit-backface-transition: hidden; } }
 
 .nav ul {
   text-align: right;
   padding-top: 10px; }
-  @media only screen and (max-width: 959px) {
-    .nav ul {
-      text-align: center;
-      padding-top: 0px;
-      padding-right: 40px; } }
 
 .nav li {
   height: 100%;
@@ -506,7 +481,7 @@ small, .footer address {
   list-style: none; }
   @media only screen and (max-width: 959px) {
     .nav li {
-      padding-top: 10%; } }
+      display: block; } }
 
 .nav a {
   color: #000;
@@ -515,62 +490,10 @@ small, .footer address {
   padding: 20px; }
   @media only screen and (max-width: 959px) {
     .nav a {
-      padding: 0px;
-      color: white; } }
+      padding: 0px; } }
 
 .nav a:hover {
   text-decoration: underline; }
-
-.menu-link {
-  display: none;
-  z-index: 10; }
-  @media only screen and (max-width: 959px) {
-    .menu-link {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding-top: 22px;
-      padding-right: 10px;
-      -webkit-transition: 0.25s ease;
-              transition: 0.25s ease; } }
-
-.menu-link a {
-  text-decoration: none;
-  font-size: 1.4em;
-  -webkit-transition: 0.5s ease;
-          transition: 0.5s ease; }
-
-.menu-link a:hover {
-  text-decoration: none;
-  font-size: 1.5em;
-  -webkit-transition: 0.5s ease;
-          transition: 0.5s ease; }
-
-@media only screen and (max-width: 959px) {
-  .menu-link.active {
-    -webkit-transform: translate(-7em, 0px);
-        -ms-transform: translate(-7em, 0px);
-            transform: translate(-7em, 0px);
-    -webkit-transition: 0.25s ease;
-            transition: 0.25s ease;
-    -webkit-backface-transition: hidden; } }
-
-/* # main movement
-================================================== */
-@media only screen and (max-width: 959px) {
-  main.active {
-    -webkit-transform: translate(-10em, 0px);
-        -ms-transform: translate(-10em, 0px);
-            transform: translate(-10em, 0px);
-    -webkit-transition: 0.25s ease;
-            transition: 0.25s ease;
-    -webkit-backface-transition: hidden; } }
-
-main {
-  -webkit-transition: 0.25s ease;
-          transition: 0.25s ease;
-  -webkit-backface-transition: hidden; }
 
 /* #Title
 ================================================== */
