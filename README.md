@@ -1,5 +1,3 @@
-![alt tag](images/work/portfolio/vim.png)
-
 INDEX
 ===========
 Source files for my own personal website
@@ -9,3 +7,5 @@ Utilizes
 -------------
 [NodeJS](http://nodejs.org/), [Gulp](http://gulpjs.com/), and [Sass](http://sass-lang.com/)
 
+
+![alt tag](images/work/portfolio/vim.png)
