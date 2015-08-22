@@ -1,3 +1,5 @@
+![alt tag](images/matt.png)
+
 INDEX
 ===========
 Source files for my own personal website
