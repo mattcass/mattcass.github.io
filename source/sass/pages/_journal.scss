@@ -1,5 +1,5 @@
 
-/* #JOURNAL PAGE 
+/* #JOURNAL PAGE
 ================================================== */
 
 .title-menu {
@@ -14,11 +14,32 @@
     margin-left: 6.5%;
 }
 
+.filter {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .filter li {
-    height: 100%;
-    padding-right: 20px;
+  height: 100%;
+  padding-right: 20px;
 	display: inline-block;
 	list-style: none;
+
+  @media only screen and (max-width: 800px) {
+    display: block;
+  }
+
+  h2 {
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.35em;
+      margin: 0;
+      margin-bottom: 0.25em;
+    }
+  }
+
 }
 
 .filter a {
@@ -66,4 +87,3 @@ code {
 .content li {
     margin-bottom: 1em;
 }
-
