@@ -1,0 +1,56 @@
+
+@import '~basscss/css/basscss.css';
+
+* { box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  line-height: 1.6;
+  color: #515151;
+}
+
+body { margin: 0; }
+.mxw5 {  max-width: 500px; }
+.mxw6 { max-width: 600px; }
+
+h1, 
+.serif {
+  font-family: Georgia, serif;
+  font-size: calc(1.9em + 0.5vw);
+  line-height: 1.7;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5
+h6, .h6 {
+  font-weight: bold;
+  line-height: 1.25;
+  color: #000;
+}
+
+ul { margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    color: #0575dc;
+  }
+}
+
+blockquote {
+  border-left: 2px solid #DDD;
+  margin-left: 10px;
+  padding: 0.5em 10px;
+}
+
+pre { 
+  background-color: #f7f7f7; 
+  padding: 2em 1em;
+}
+
