@@ -9,10 +9,8 @@ export default class Header extends React.Component {
             <Link to="/">Matthew Casserly </Link>
           </h1>
           <p className="h1 serif inline"> 
-            is a web developer currently
-            <br />
-            working at
-            <a href="http://www.freshtilledsoil.com"> Fresh <br/> Tilled Soil</a> in Boston, MA.
+            is a web developer currently working at
+            <a href="http://www.freshtilledsoil.com"> Fresh Tilled Soil</a> in Boston, MA.
           </p>
           <blockquote className="m0 mt1">
             &quot;It was this realization that pushed me to search for a career that

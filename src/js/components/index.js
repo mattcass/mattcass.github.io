@@ -11,7 +11,7 @@ export default class Index extends React.Component {
         <div className="p3">
           <Nav />
           <Header />
-          <main className="mxw6">
+          <main className="mxw5">
             {this.props.children}
           </main>
           <footer>

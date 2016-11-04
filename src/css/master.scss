@@ -10,15 +10,14 @@ html {
   color: #515151;
 }
 
-body { margin: 0; }
-.mxw5 {  max-width: 500px; }
-.mxw6 { max-width: 600px; }
+body    { margin: 0; }
+.mxw5   {  max-width: 500px; }
 
 h1, 
 .serif {
   font-family: Georgia, serif;
-  font-size: calc(1.9em + 0.5vw);
   line-height: 1.7;
+  font-size: 2.5em;
 }
 
 h1, .h1,
@@ -52,5 +51,6 @@ blockquote {
 pre { 
   background-color: #f7f7f7; 
   padding: 2em 1em;
+  overflow: auto;
 }
 

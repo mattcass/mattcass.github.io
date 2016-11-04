@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const blogPosts = [
-  { file: 'work',              meta: '2016',    title: 'Work' }, 
   { file: 'reading_list_2016', meta: '2016',    title: 'Reading List 2016' }, 
+  { file: 'work',              meta: '2016',    title: 'Work' }, 
   { file: 'morning',           meta: '2015',    title: 'Morning' }, 
   { file: 'reading_list_2015', meta: '2015',    title: 'Reading List 2015' }, 
   { file: 'accessibility',     meta: '2014',    title: 'Accessibility In The Modern Age' }, 
