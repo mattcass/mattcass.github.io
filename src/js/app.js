@@ -20,7 +20,7 @@ import NotFound from './components/404.js';
 
 // Routing
 ReactDOM.render(
-  <Router history={appHistory}>
+  <Router onUpdate={() => window.scrollTo(0,0)} history={appHistory}>
     <Route path="/" component={Index}>
       <IndexRoute component={Writing} />
       <Route path="/blog(/:article)" component={Blog} />
