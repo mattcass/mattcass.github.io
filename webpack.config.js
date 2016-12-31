@@ -10,7 +10,7 @@ module.exports = {
     inline:true,
     port: 8008
   },
-  devtool: 'source-map',
+  // devtool: 'eval',
   module: {
     preLoaders: [
       {
@@ -56,14 +56,13 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.AggressiveMergingPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    })
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+     mangle: false,
+     sourcemap: false,
+     minimize: true
+   })
   ]
 };
 
