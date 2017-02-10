@@ -1,27 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="description" content="Matthew Casserly Simplicity in development and design.">
-  <title>mmatter</title>
+<meta charset="UTF-8">
+<title>Hello.</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <meta property="og:title" content="Matthew Casserly" />
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://www.matthewcasserly.com">
-  <meta property="og:description" content="Web developer based in Boston, MA"/>
-  <meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="cleartype" content="on">
+<link rel="stylesheet" href="app.css">
 </head>
 <body>
 
-  <div id="app">
-  </div>
-  <noscript>
-    Yea, it's JavaScript... Sorry about that.
-  </noscript>
-  <!-- <script src="http://localhost:8008/build/bundle.js" charset="utf-8"></script> -->
-  <script src="build/bundle.js"></script>
+  <nav>
+    <ul>
+      <li><a href="/" id="home">Index</a></li>
+      <li><a href="https://twitter.com/mmaatter">Twitter</a></li>
+      <li><a href="https://github.com/mattcass">Github</a></li>
+    </ul>
+  </nav>
+
+  <main role="main" >
+    <section data-main id="main">
+      <header>
+       <h1 class="inline">
+         <a href="/">Matthew Casserly</a>
+       </h1>
+       <p class="h1 serif inline">
+         is a web developer currently working at
+         <a href="http://www.freshtilledsoil.com"> Fresh Tilled Soil</a> in Boston, MA.
+       </p>
+       <blockquote>
+         &quot;It was this realization that pushed me to search for a career that
+         would require constant progression. Something which forced me to
+         deal with difficult tasks and find solutions. To learn.&quot;
+       </blockquote>
+      </header>
+
+      <ul id="list">
+      </ul>
+    </section>
+    <section id="marked" data-page>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2050</small>
+  </footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
