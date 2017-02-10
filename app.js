@@ -29,6 +29,8 @@ for ( var i = 0 ; i < data.length; i++ ) {
 }
 
 function displayPage(home) {
+  window.scrollTo(0, 0);
+
   if ( home ) {
     markdownContainer.style.display = 'none';
     homepageContainer.style.display = 'block';
