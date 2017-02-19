@@ -1,5 +1,6 @@
 
 const data = [
+  { file: '2017',          meta: '2017', title: 'Reading List 2017' },
   { file: '2016',          meta: '2016', title: 'Reading List 2016' },
   { file: 'work',          meta: '2016', title: 'Work' },
   { file: 'morning',       meta: '2015', title: 'Morning' },
