@@ -1,6 +1,9 @@
 
 const data = [
   { file: '2017',          meta: '2017', title: 'Reading List 2017' },
+  { file: 'node',          meta: '2016', title: 'Leveraging Node in Development' },
+  { file: 'video',         meta: '2016', title: 'Video on Demand' },
+  { file: 'workflow',      meta: '2016', title: 'Creating a Development Workflow with Taskrunners' },
   { file: '2016',          meta: '2016', title: 'Reading List 2016' },
   { file: 'work',          meta: '2016', title: 'Work' },
   { file: 'morning',       meta: '2015', title: 'Morning' },
