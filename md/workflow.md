@@ -1,9 +1,9 @@
 ## Creating a Development Workflow with Task Runners
 
-<i>Originally published on [Fresh Tilled Soil's](https://www.freshtilledsoil.com) blog:
+<i>
+Originally published on [Fresh Tilled Soil's](https://www.freshtilledsoil.com) blog:
 [https://www.freshtilledsoil.com/creating-a-development-workflow-with-task-runners](https://www.freshtilledsoil.com/creating-a-development-workflow-with-task-runners)
-
-
+</i>
 
 Bill Gates once said, “I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.”
 
