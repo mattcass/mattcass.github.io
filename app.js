@@ -16,7 +16,7 @@ const data = [
 ];
 
 const ul = document.getElementById('list');
-let home = true;
+var   home = true;
 const markdownContainer = document.getElementById('marked');
 const homepageContainer = document.getElementById('main');
 
