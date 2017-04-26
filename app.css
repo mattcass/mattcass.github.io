@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  max-width: 500px;
+  max-width: 542px;
   padding: 1em;
 }
 
@@ -63,7 +63,7 @@ a:hover {
 blockquote {
   border-left: 2px solid #DDD;
   margin-left: 10px;
-  padding: 0.5em 30px;
+  padding: 0.5em 20px;
   margin: 1em 0 0 0;
 }
 pre {
@@ -96,4 +96,40 @@ main {
 
 .hidden {
   display: none;
+}
+
+#marked, #main {
+  animation-duration: 0.55s;
+  animation-fill-mode: both;
+}
+
+#marked {
+  animation-name: slideOut;
+}
+
+#main {
+  animation-name: slideIn;
+}
+
+
+@keyframes slideOut {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

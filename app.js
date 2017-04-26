@@ -16,7 +16,7 @@ const data = [
 ];
 
 const ul = document.getElementById('list');
-var   home = true;
+var home = true;
 const markdownContainer = document.getElementById('marked');
 const homepageContainer = document.getElementById('main');
 
@@ -36,11 +36,11 @@ function displayPage(home) {
   window.scrollTo(0, 0);
 
   if ( home ) {
-    markdownContainer.style.display = 'none';
-    homepageContainer.style.display = 'block';
+    markdownContainer.classList.add('hidden');
+    homepageContainer.classList.remove('hidden');
   } else {
-    markdownContainer.style.display = 'block';
-    homepageContainer.style.display = 'none';
+    markdownContainer.classList.remove('hidden');
+    homepageContainer.classList.add('hidden');
   }
 }
 
