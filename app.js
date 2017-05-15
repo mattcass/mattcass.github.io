@@ -3,7 +3,7 @@ const data = [
     file: 'albers/',
     meta: '2017',
     markdown: ' ',
-    title: 'Homage To The Square'
+    title: 'Josef Albers: Homage To The Square'
   },
   {
     file: 'md/2017.md',
