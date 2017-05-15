@@ -1,18 +1,83 @@
-
 const data = [
-  { file: '2017',          meta: '2017', title: 'Reading List 2017' },
-  { file: 'node',          meta: '2016', title: 'Leveraging Node in Development' },
-  { file: 'video',         meta: '2016', title: 'Video on Demand' },
-  { file: 'workflow',      meta: '2016', title: 'Creating a Development Workflow with Taskrunners' },
-  { file: '2016',          meta: '2016', title: 'Reading List 2016' },
-  { file: 'work',          meta: '2016', title: 'Work' },
-  { file: 'morning',       meta: '2015', title: 'Morning' },
-  { file: '2015',          meta: '2015', title: 'Reading List 2015' },
-  { file: 'accessibility', meta: '2014', title: 'Accessibility In The Modern Age' },
-  { file: '2014',          meta: '2014', title: 'Reading List 2014' },
-  { file: 'vim',           meta: '2014', title: 'Working With Vim' },
-  { file: 'reading',       meta: '2014', title: 'More, Better, Reading' },
-  { file: 'tales',         meta: '2014', title: 'Tales Of Development' },
+  {
+    file: 'albers/',
+    meta: '2017',
+    markdown: ' ',
+    title: 'Homage To The Square'
+  },
+  {
+    file: 'md/2017.md',
+    meta: '2017',
+    markdown: 'markdown',
+    title: 'Reading List 2017'
+  },
+  {
+    file: 'md/node.md',
+    meta: '2016',
+    markdown: 'markdown',
+    title: 'Leveraging Node in Development'
+  },
+  {
+    file: 'md/video.md',
+    meta: '2016',
+    markdown: 'markdown',
+    title: 'Video on Demand'
+  },
+  {
+    file: 'md/workflow.md',
+    meta: '2016',
+    markdown: 'markdown',
+    title: 'Creating a Development Workflow with Taskrunners'
+  },
+  {
+    file: 'md/2016.md',
+    meta: '2016',
+    markdown: 'markdown',
+    title: 'Reading List 2016'
+  },
+  { file: 'md/work.md', meta: '2016', markdown: 'markdown', title: 'Work' },
+  {
+    file: 'md/morning.md',
+    meta: '2015',
+    markdown: 'markdown',
+    title: 'Morning'
+  },
+  {
+    file: 'md/2015.md',
+    meta: '2015',
+    markdown: 'markdown',
+    title: 'Reading List 2015'
+  },
+  {
+    file: 'md/accessibility.md',
+    meta: '2014',
+    markdown: 'markdown',
+    title: 'Accessibility In The Modern Age'
+  },
+  {
+    file: 'md/2014.md',
+    meta: '2014',
+    markdown: 'markdown',
+    title: 'Reading List 2014'
+  },
+  {
+    file: 'md/vim.md',
+    meta: '2014',
+    markdown: 'markdown',
+    title: 'Working With Vim'
+  },
+  {
+    file: 'md/reading.md',
+    meta: '2014',
+    markdown: 'markdown',
+    title: 'More, Better, Reading'
+  },
+  {
+    file: 'md/tales.md',
+    meta: '2014',
+    markdown: 'markdown',
+    title: 'Tales Of Development'
+  }
 ];
 
 const ul = document.getElementById('list');
@@ -21,11 +86,11 @@ const markdownContainer = document.getElementById('marked');
 const homepageContainer = document.getElementById('main');
 
 // loop
-for ( var i = 0 ; i < data.length; i++ ) {
+for (var i = 0; i < data.length; i++) {
   item = data[i];
   let htmlString = `
   <li>
-      <a class="h2 bold markdown" href="md/${item.file}.md">${item.title}</a>
+      <a class="h2 bold ${item.markdown}" href="${item.file}">${item.title}</a>
       <small class="block">${item.meta}</small>
 
     </li>`;
@@ -35,7 +100,7 @@ for ( var i = 0 ; i < data.length; i++ ) {
 function displayPage(home) {
   window.scrollTo(0, 0);
 
-  if ( home ) {
+  if (home) {
     markdownContainer.classList.add('hidden');
     homepageContainer.classList.remove('hidden');
   } else {
@@ -48,7 +113,7 @@ function displayPage(home) {
 function getFileContents(file, markdownContainer) {
   var request = new XMLHttpRequest();
   request.open('GET', file, true);
-  request.onreadystatechange = function () {
+  request.onreadystatechange = function() {
     if (this.status !== 200) console.log('error retrieving file');
     // get file text
     var text = this.responseText;
@@ -62,20 +127,20 @@ function getFileContents(file, markdownContainer) {
 
 // router
 function locationHashChanged() {
-  if ( window.location.hash ) {
+  if (window.location.hash) {
     var hashValue = window.location.hash.substr(1);
     var link = document.querySelector("a[href='" + hashValue + "']");
-    if ( link != null ) {
+    if (link != null) {
       link.click();
     }
-  } else if ( !window.location.hash ) {
+  } else if (!window.location.hash) {
     displayPage(true);
   }
 }
 
 // click
 document.querySelectorAll('.markdown').forEach(function(element) {
-  element.addEventListener('click', function(e){
+  element.addEventListener('click', function(e) {
     e.preventDefault();
     var file = this.getAttribute('href');
     getFileContents(file, markdownContainer);
