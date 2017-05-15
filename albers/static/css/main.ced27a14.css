@@ -1,0 +1,2 @@
+#root,body,html{margin:0;padding:0;font-family:sans-serif;height:100%;overflow:hidden}.app{height:100%;cursor:pointer}.albers,.interaction,.josef{position:absolute;transition:all .25s ease}.josef{height:90vh;top:5vh;width:80%;left:10%}.albers{height:75vh;top:10vh;width:70%;left:15%}.interaction{height:40vh;top:25vh;width:50%;left:25%}@media (max-width:600px){.josef{height:80vh;top:15vh}.albers{height:60vh;top:15vh}.interaction{height:25vh;top:30vh;width:60%;left:20%}}
+/*# sourceMappingURL=main.ced27a14.css.map*/
