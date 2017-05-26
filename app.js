@@ -12,6 +12,12 @@ const data = [
     title: 'Reading List 2017'
   },
   {
+    file: 'hash/',
+    meta: '2016',
+    markdown: ' ',
+    title: 'hash.click.js'
+  },
+  {
     file: 'md/node.md',
     meta: '2016',
     markdown: 'markdown',
