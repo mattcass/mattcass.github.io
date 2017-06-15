@@ -1,4 +1,4 @@
-* {
+var(--spacing-V) var(--spacing-H)* {
   box-sizing: border-box;
 }
 
@@ -12,9 +12,25 @@ html {
 }
 
 body {
-  max-width: 542px;
-  padding: 1em;
   overflow-x: hidden;
+  margin: 0;
+}
+
+:root {
+  --spacingV: 2em;
+  --spacingH: 4em;
+  --border: 1px solid #EBEBE1;
+  --width: 600px;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --spacingV: 1em;
+    --spacingH: 1em;
+    --border: 1px solid #EBEBE1;
+    --width: 600px;
+  }
+
 }
 
 h1,
@@ -57,12 +73,21 @@ a:hover, a:focus {
   color: #0575dc;
 }
 
+small {
+  font-weight: 400;
+}
+
+.light {
+  font-weight: 300;
+}
+
 blockquote {
   border-left: 2px solid #DDD;
   margin-left: 10px;
   padding: 0.5em 20px;
   margin: 1em 0 0 0;
 }
+
 pre {
   background-color: #f7f7f7;
   padding: 2em 1em;
@@ -70,13 +95,55 @@ pre {
   font-size: 14px;
 }
 
+nav {
+  display: block;
+  padding: var(--spacingV) var(--spacingH);
+  border-bottom: var(--border);
+}
+
 header {
-  margin-bottom: 3em;
+  max-width: var(--width);
+  padding: var(--spacingV) var(--spacingH);
+}
+
+footer {
+  padding: var(--spacingV) var(--spacingH);
+  border-top: var(--border);
 }
 
 main {
-  margin-top: 4em;
-  margin-bottom: 4em;
+  min-height: calc(100vh - 230px);
+  display: flex;
+}
+
+
+#list {
+  border-top: var(--border);
+}
+
+#list li {
+  margin-left: var(--spacingH);
+  padding: var(--spacingV) var(--spacingH) var(--spacingV) 0;
+  border-left: var(--border);
+  border-bottom: var(--border);
+  min-height: 87px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.item {
+  max-width: var(--width);
+}
+
+
+
+#list li:last-child {
+  border-bottom: none;
 }
 
 .inline {
@@ -91,6 +158,10 @@ main {
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
 .hidden {
   display: none;
 }
@@ -102,24 +173,18 @@ main {
 
 #marked {
   animation-name: slideOut;
+  padding: var(--spacingV) 0;
+  margin: 0 var(--spacingH);
+  max-width: var(--width);
+  border-left: var(--border);
+  align-items: stretch;
 }
 
 #main {
   animation-name: slideIn;
+  width: 100%;
 }
 
-#list {
-  columns: 3;
-  width: calc(100vw - 3em);
-}
-
-#list li {
-  margin-bottom: 4rem;
-  padding-right: 1em;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid;
-}
 
 @media (max-width: 800px) {
   #list {

@@ -1,50 +1,85 @@
 const data = [
   {
+    file: 'https://sunnies-zqnrmrxqsw.now.sh/',
+    meta: '2017',
+    type: 'Development',
+    code: 'React, D3, Next.js',
+    link: 'https://github.com/mattcass/argent',
+    markdown: ' ',
+    title: 'Monthly Budget Tracking Application '
+  },
+  {
     file: 'albers/',
     meta: '2017',
+    type: 'Development',
+    code: 'React',
+    link: 'https://github.com/mattcass/albers',
     markdown: ' ',
     title: 'Homage To The Square'
   },
   {
     file: 'md/2017.md',
     meta: '2017',
+    type: 'Reading',
+    code: '',
     markdown: 'markdown',
     title: 'Reading List 2017'
   },
   {
     file: 'hash/',
     meta: '2016',
-    markdown: ' ',
+    type: 'Development',
+    code: 'Javascript',
+    link: 'https://github.com/mattcass/hash.click',
+    markdown: '',
     title: 'hash.click.js'
   },
   {
     file: 'md/node.md',
     meta: '2016',
+    type: 'Blog',
+    code: 'Node.js',
     markdown: 'markdown',
     title: 'Leveraging Node in Development'
   },
   {
     file: 'md/video.md',
     meta: '2016',
+    type: 'Blog',
+    code: 'Javascript',
+    link: 'https://codepen.io/mattcass/pen/QNOxQg',
     markdown: 'markdown',
     title: 'Video on Demand'
   },
   {
     file: 'md/workflow.md',
     meta: '2016',
+    type: 'Blog',
+    code: 'Gulp, Javascript',
     markdown: 'markdown',
     title: 'Creating a Development Workflow with Taskrunners'
   },
   {
     file: 'md/2016.md',
     meta: '2016',
+    type: 'Reading',
+    code: '',
     markdown: 'markdown',
     title: 'Reading List 2016'
   },
-  { file: 'md/work.md', meta: '2016', markdown: 'markdown', title: 'Work' },
+  {
+    file: 'md/work.md',
+    meta: '2016',
+    type: 'Reading',
+    code: '',
+    markdown: 'markdown',
+    title: 'Work'
+  },
   {
     file: 'md/morning.md',
     meta: '2015',
+    type: 'Blog',
+    code: '',
     markdown: 'markdown',
     title: 'Morning'
   },
@@ -52,35 +87,47 @@ const data = [
     file: 'md/2015.md',
     meta: '2015',
     markdown: 'markdown',
+    type: 'Reading',
+    code: '',
     title: 'Reading List 2015'
   },
   {
     file: 'md/accessibility.md',
     meta: '2014',
+    type: 'Blog',
+    code: '',
     markdown: 'markdown',
     title: 'Accessibility In The Modern Age'
   },
   {
     file: 'md/2014.md',
     meta: '2014',
+    type: 'Reading',
+    code: '',
     markdown: 'markdown',
     title: 'Reading List 2014'
   },
   {
     file: 'md/vim.md',
     meta: '2014',
+    type: 'Blog',
+    code: 'Unix',
     markdown: 'markdown',
     title: 'Working With Vim'
   },
   {
     file: 'md/reading.md',
     meta: '2014',
+    type: 'Blog',
+    code: '',
     markdown: 'markdown',
     title: 'More, Better, Reading'
   },
   {
     file: 'md/tales.md',
     meta: '2014',
+    type: 'Blog',
+    code: '',
     markdown: 'markdown',
     title: 'Tales Of Development'
   }
@@ -94,10 +141,14 @@ const homepageContainer = document.getElementById('main');
 // loop
 for (var i = 0; i < data.length; i++) {
   item = data[i];
+  let link = item.link ? `<a href="${item.link}">View Code</a>` : ``
+
   let htmlString = `
   <li>
-      <a class="h2 bold ${item.markdown}" href="${item.file}">${item.title}</a>
-      <small class="block">${item.meta}</small>
+      <a class="item h2 bold ${item.markdown}" href="${item.file}">${item.title}</a>
+      <small>${item.type}, ${item.code}</small>
+      <small>${link}</small>
+      <small class="light">${item.meta}</small>
 
     </li>`;
   ul.insertAdjacentHTML('beforeend', htmlString);
