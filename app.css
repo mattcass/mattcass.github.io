@@ -185,18 +185,6 @@ main {
 }
 
 
-@media (max-width: 800px) {
-  #list {
-    columns: 2;
-  }
-}
-
-@media (max-width: 500px) {
-  #list {
-    columns: 1;
-  }
-}
-
 @keyframes slideOut {
   from {
     transform: translateX(50px);
