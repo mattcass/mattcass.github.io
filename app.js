@@ -141,12 +141,13 @@ const homepageContainer = document.getElementById('main');
 // loop
 for (var i = 0; i < data.length; i++) {
   item = data[i];
-  let link = item.link ? `<a href="${item.link}">View Code</a>` : ``
+  var link = item.link ? `<a href="${item.link}">View Code</a>` : ``
+  var code = item.code ? `, ${item.code}` : ``
 
   let htmlString = `
   <li>
       <a class="item h2 bold ${item.markdown}" href="${item.file}">${item.title}</a>
-      <small>${item.type}, ${item.code}</small>
+      <small>${item.type}${code}</small>
       <small>${link}</small>
       <small class="light">${item.meta}</small>
 
