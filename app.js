@@ -1,6 +1,6 @@
 const data = [
   {
-    file: 'https://sunnies-zqnrmrxqsw.now.sh/',
+    file: 'https://cash-app-9ed43.firebaseapp.com/',
     meta: '2017',
     type: 'Development',
     code: 'React, D3, Next.js',
