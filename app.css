@@ -115,6 +115,10 @@ main {
   min-height: calc(100vh - 230px);
 }
 
+.flex {
+  display: flex;
+}
+
 
 #list {
   border-top: var(--border);
