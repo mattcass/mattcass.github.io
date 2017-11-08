@@ -3,17 +3,13 @@ const data = [
     file: 'https://cash-app-9ed43.firebaseapp.com/',
     meta: '2017',
     type: 'Development',
-    code: 'React, D3, Next.js',
-    link: 'https://github.com/mattcass/argent',
     markdown: ' ',
-    title: 'Monthly Budget Tracking Application '
+    title: "L'argent"
   },
   {
     file: 'albers/',
     meta: '2017',
     type: 'Development',
-    code: 'React',
-    link: 'https://github.com/mattcass/albers',
     markdown: ' ',
     title: 'Homage To The Square'
   },
@@ -21,7 +17,6 @@ const data = [
     file: 'md/2017.md',
     meta: '2017',
     type: 'Reading',
-    code: '',
     markdown: 'markdown',
     title: 'Reading List 2017'
   },
@@ -29,8 +24,6 @@ const data = [
     file: 'hash/',
     meta: '2016',
     type: 'Development',
-    code: 'Javascript',
-    link: 'https://github.com/mattcass/hash.click',
     markdown: '',
     title: 'hash.click.js'
   },
@@ -38,7 +31,6 @@ const data = [
     file: 'md/node.md',
     meta: '2016',
     type: 'Blog',
-    code: 'Node.js',
     markdown: 'markdown',
     title: 'Leveraging Node in Development'
   },
@@ -46,8 +38,6 @@ const data = [
     file: 'md/video.md',
     meta: '2016',
     type: 'Blog',
-    code: 'Javascript',
-    link: 'https://codepen.io/mattcass/pen/QNOxQg',
     markdown: 'markdown',
     title: 'Video on Demand'
   },
@@ -55,7 +45,6 @@ const data = [
     file: 'md/workflow.md',
     meta: '2016',
     type: 'Blog',
-    code: 'Gulp, Javascript',
     markdown: 'markdown',
     title: 'Creating a Development Workflow with Taskrunners'
   },
@@ -63,7 +52,6 @@ const data = [
     file: 'md/2016.md',
     meta: '2016',
     type: 'Reading',
-    code: '',
     markdown: 'markdown',
     title: 'Reading List 2016'
   },
@@ -71,7 +59,6 @@ const data = [
     file: 'md/work.md',
     meta: '2016',
     type: 'Reading',
-    code: '',
     markdown: 'markdown',
     title: 'Work'
   },
@@ -79,7 +66,6 @@ const data = [
     file: 'md/morning.md',
     meta: '2015',
     type: 'Blog',
-    code: '',
     markdown: 'markdown',
     title: 'Morning'
   },
@@ -88,14 +74,12 @@ const data = [
     meta: '2015',
     markdown: 'markdown',
     type: 'Reading',
-    code: '',
     title: 'Reading List 2015'
   },
   {
     file: 'md/accessibility.md',
     meta: '2014',
     type: 'Blog',
-    code: '',
     markdown: 'markdown',
     title: 'Accessibility In The Modern Age'
   },
@@ -103,7 +87,6 @@ const data = [
     file: 'md/2014.md',
     meta: '2014',
     type: 'Reading',
-    code: '',
     markdown: 'markdown',
     title: 'Reading List 2014'
   },
@@ -111,7 +94,6 @@ const data = [
     file: 'md/vim.md',
     meta: '2014',
     type: 'Blog',
-    code: 'Unix',
     markdown: 'markdown',
     title: 'Working With Vim'
   },
@@ -119,7 +101,6 @@ const data = [
     file: 'md/reading.md',
     meta: '2014',
     type: 'Blog',
-    code: '',
     markdown: 'markdown',
     title: 'More, Better, Reading'
   },
@@ -127,7 +108,6 @@ const data = [
     file: 'md/tales.md',
     meta: '2014',
     type: 'Blog',
-    code: '',
     markdown: 'markdown',
     title: 'Tales Of Development'
   }
@@ -141,14 +121,10 @@ const homepageContainer = document.getElementById('main');
 // loop
 for (var i = 0; i < data.length; i++) {
   item = data[i];
-  var link = item.link ? `<a href="${item.link}">View Code</a>` : ``
-  var code = item.code ? `, ${item.code}` : ``
 
   let htmlString = `
   <li>
       <a class="item h2 bold ${item.markdown}" href="${item.file}">${item.title}</a>
-      <small>${item.type}${code}</small>
-      <small>${link}</small>
       <small class="light">${item.meta}</small>
 
     </li>`;
