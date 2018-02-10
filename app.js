@@ -1,10 +1,9 @@
 const data = [
   {
-    file: 'https://cash-app-9ed43.firebaseapp.com/',
-    meta: '2017',
-    type: 'Development',
-    markdown: ' ',
-    title: "L'argent"
+    file: 'md/2018.md',
+    meta: '2018',
+    markdown: 'markdown',
+    title: 'Reading List 2017'
   },
   {
     file: 'albers/',
@@ -26,27 +25,6 @@ const data = [
     type: 'Development',
     markdown: '',
     title: 'hash.click.js'
-  },
-  {
-    file: 'md/node.md',
-    meta: '2016',
-    type: 'Blog',
-    markdown: 'markdown',
-    title: 'Leveraging Node in Development'
-  },
-  {
-    file: 'md/video.md',
-    meta: '2016',
-    type: 'Blog',
-    markdown: 'markdown',
-    title: 'Video on Demand'
-  },
-  {
-    file: 'md/workflow.md',
-    meta: '2016',
-    type: 'Blog',
-    markdown: 'markdown',
-    title: 'Creating a Development Workflow with Taskrunners'
   },
   {
     file: 'md/2016.md',
