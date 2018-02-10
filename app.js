@@ -3,7 +3,7 @@ const data = [
     file: 'md/2018.md',
     meta: '2018',
     markdown: 'markdown',
-    title: 'Reading List 2017'
+    title: 'Reading List 2018'
   },
   {
     file: 'albers/',
