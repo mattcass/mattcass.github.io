@@ -2,49 +2,42 @@ const data = [
   {
     file: 'md/2018.md',
     meta: '2018',
-    markdown: 'markdown',
     title: 'Reading List 2018'
   },
   {
     file: 'albers/',
     meta: '2017',
     type: 'Development',
-    markdown: ' ',
     title: 'Homage To The Square'
   },
   {
     file: 'md/2017.md',
     meta: '2017',
     type: 'Reading',
-    markdown: 'markdown',
     title: 'Reading List 2017'
   },
   {
     file: 'hash/',
     meta: '2016',
     type: 'Development',
-    markdown: '',
     title: 'hash.click.js'
   },
   {
     file: 'md/2016.md',
     meta: '2016',
     type: 'Reading',
-    markdown: 'markdown',
     title: 'Reading List 2016'
   },
   {
     file: 'md/work.md',
     meta: '2016',
     type: 'Reading',
-    markdown: 'markdown',
     title: 'Work'
   },
   {
     file: 'md/morning.md',
     meta: '2015',
     type: 'Blog',
-    markdown: 'markdown',
     title: 'Morning'
   },
   {
@@ -58,35 +51,30 @@ const data = [
     file: 'md/accessibility.md',
     meta: '2014',
     type: 'Blog',
-    markdown: 'markdown',
     title: 'Accessibility In The Modern Age'
   },
   {
     file: 'md/2014.md',
     meta: '2014',
     type: 'Reading',
-    markdown: 'markdown',
     title: 'Reading List 2014'
   },
   {
     file: 'md/vim.md',
     meta: '2014',
     type: 'Blog',
-    markdown: 'markdown',
     title: 'Working With Vim'
   },
   {
     file: 'md/reading.md',
     meta: '2014',
     type: 'Blog',
-    markdown: 'markdown',
     title: 'More, Better, Reading'
   },
   {
     file: 'md/tales.md',
     meta: '2014',
     type: 'Blog',
-    markdown: 'markdown',
     title: 'Tales Of Development'
   }
 ];
@@ -101,10 +89,9 @@ for (var i = 0; i < data.length; i++) {
   item = data[i];
 
   let htmlString = `
-  <li>
-      <a class="item h2 bold ${item.markdown}" href="${item.file}">${item.title}</a>
+    <li>
+      <a class="item" href="${item.file}">${item.title}</a>
       <small class="light">${item.meta}</small>
-
     </li>`;
   ul.insertAdjacentHTML('beforeend', htmlString);
 }
