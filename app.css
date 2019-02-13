@@ -6,9 +6,8 @@ html {
   font-size: 100%;
   line-height: 1.6;
   color: #515151;
-  font-family: -apple-system,BlinkMacSystemFont,avenir
-    next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe
-    ui,arial,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica,
+    helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
 body {
@@ -19,7 +18,7 @@ body {
 :root {
   --spacingV: 2em;
   --spacingH: 4em;
-  --border: 1px solid #EBEBE1;
+  --border: 1px solid #ebebe1;
   --width: 600px;
 }
 
@@ -27,10 +26,9 @@ body {
   :root {
     --spacingV: 1em;
     --spacingH: 1em;
-    --border: 1px solid #EBEBE1;
+    --border: 1px solid #ebebe1;
     --width: 600px;
   }
-
 }
 
 h1,
@@ -44,12 +42,17 @@ h1,
   font-size: 1.5rem;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 h6,
+.h6 {
   font-weight: bold;
   line-height: 1.25;
   color: #000;
@@ -69,7 +72,8 @@ a {
   color: #000;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #0575dc;
 }
 
@@ -82,7 +86,7 @@ small {
 }
 
 blockquote {
-  border-left: 2px solid #DDD;
+  border-left: 2px solid #ddd;
   margin-left: 10px;
   padding: 0.5em 20px;
   margin: 1em 0 0 0;
@@ -96,13 +100,42 @@ pre {
 }
 
 nav {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: var(--spacingV) var(--spacingH);
   border-bottom: var(--border);
 }
 
+.clock li {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: monospace;
+}
+
+.clock span {
+  font-size: 13px;
+}
+
+.clock time {
+  display: inline-block;
+  min-width: 60px;
+  font-size: 13px;
+  margin: 0 16px 0 8px;
+}
+
+.clock i {
+  margin-top: 5px;
+}
+
+.clock i img {
+  height: 12px;
+}
+
 header {
-  max-width: var(--width);
+  max-width: 500px;
   padding: var(--spacingV) var(--spacingH);
 }
 
@@ -118,7 +151,6 @@ main {
 .flex {
   display: flex;
 }
-
 
 #list {
   border-top: var(--border);
@@ -142,8 +174,6 @@ main {
 .item {
   max-width: var(--width);
 }
-
-
 
 #list li:last-child {
   border-bottom: none;
@@ -169,8 +199,9 @@ main {
   display: none;
 }
 
-#marked, #main {
-  animation-duration: 0.55s;
+#marked,
+#main {
+  animation-duration: 1s;
   animation-fill-mode: both;
 }
 
@@ -187,7 +218,6 @@ main {
   animation-name: slideIn;
   width: 100%;
 }
-
 
 @keyframes slideOut {
   from {
