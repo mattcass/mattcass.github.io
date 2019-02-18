@@ -3,16 +3,15 @@
     var time;
     var img;
 
-    if (id == "boston") {
-      time = new Date().toLocaleTimeString("en-US", {
-        timeZone: "America/New_York"
-      });
-    } else if (id === "paris") {
-      time = new Date().toLocaleTimeString("en-US", {
-        timeZone: "Europe/Paris"
-      });
-    }
+    id === "boston"
+      ? (time = new Date().toLocaleTimeString("en-US", {
+          timeZone: "America/New_York"
+        }))
+      : (time = new Date().toLocaleTimeString("en-US", {
+          timeZone: "Europe/Paris"
+        }));
 
+    // fix so sun is only during daylight hours
     if (
       (time.split(":")[0] >= 6 && time.slice(-2) === "AM") ||
       (time.split(":")[0] < 8 && time.slice(-2) === "PM")
