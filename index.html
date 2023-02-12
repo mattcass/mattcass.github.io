@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello.</title>
+    <title>Matthew Casserly</title>
     <meta
       name="description"
       content="Matthew Casserly, simplicity in development and design."
@@ -11,42 +11,43 @@
     <meta http-equiv="cleartype" content="on" />
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
     <link rel="stylesheet" href="app.css" />
+    <style>
+      body {
+        background-image: url("images/pattern.jpg");
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/" id="home">Index</a></li>
-        <li><a href="https://twitter.com/mmaatter">Twitter</a></li>
-        <li><a href="https://github.com/mattcass">Github</a></li>
-        <li><a href="https://www.strava.com/athletes/869995">Strava</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://github.com/mattcass">Github</a></li>
+          <li><a href="https://twitter.com/mmaatter">Twitter</a></li>
+          <li><a href="https://www.strava.com/athletes/869995">Strava</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <main role="main" class="flex">
-      <section id="main">
-        <header>
-          <h1 class="inline">
-            Matthew Casserly
-          </h1>
-          <p class="h1 serif inline">
-            is a
-            <br />
-            freelance web developer
-            <br />
-            living in Boston, MA.
-          </p>
-        </header>
-
-        <ul id="list"></ul>
-      </section>
-      <section id="marked"></section>
+    <main>
+        <h1>
+          <div class="block-revealer">
+            <span class="block-revealer__content">Matthew Casserly</span>
+            <span class="block-revealer__element"></span>
+          </div>
+          <div class="reveal highlight">Software Engineer</div>
+          <div>
+            <div class="block-revealer">
+              <span class="block-revealer__content">working in Boston</span>
+              <span class="block-revealer__element"></span>
+            </div>
+          </div>
+        </h1>
     </main>
 
     <footer>
-      <small>&copy; 2050</small>
+      <small>&copy; 2023</small>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
