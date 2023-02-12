@@ -1,5 +1,5 @@
 const revealEl = document.getElementsByClassName("reveal");
-const animateEl = document.getElementsByClassName("block-revealer__element");
+const animateEl = document.getElementsByClassName("revealer-element");
 
 const animate = (elem) => {
   elem.classList.add("animate", "visible");
