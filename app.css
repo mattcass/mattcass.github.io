@@ -77,10 +77,10 @@ main {
   background: white;
   height: 100px;
   padding: 1rem 2rem;
+  margin-top: auto;
 }
 
 footer {
-  margin-top: auto;
   background: white;
   padding: 2rem;
 }
@@ -93,12 +93,6 @@ h1 .highlight {
   display: block;
   white-space: nowrap;
   font-family: Georgia, serif;
-}
-
-@media only screen and (max-width: 767px) {
-  h1 .highlight {
-    white-space: pre-wrap;
-  }
 }
 
 .revealer {
@@ -159,10 +153,6 @@ h1 .highlight {
   opacity: 1;
   width: 310px;
   width: 790px;
-
-  @media (min-width: 768px) {
-    width: 695px;
-  }
 }
 
 @-webkit-keyframes block-expand {
@@ -198,5 +188,31 @@ h1 .highlight {
   }
   100% {
     width: 0;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .reveal.animate {
+    width: 330px;
+  }
+  header {
+    padding: 0.5rem 1rem;
+  }
+  main {
+    margin-top: 4rem;
+  }
+  .title {
+    padding: 1rem;
+  }
+  .text {
+    padding: 1rem 1rem;
+    margin-top: auto;
+  }
+  footer {
+    padding: 1rem;
   }
 }
